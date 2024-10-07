@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    height: 100vh;
+    background-color:#121212 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* gameIndex */
+.containerCountdown{
+   text-align: center;
+   font-size: 3rem;
+   color: #1e78a9;
+   font-family: "Bungee", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+.containerGameover{
+    width: 800px;
+    height: 580px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(imgs/gameover.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.btnGameOver {
+    display: flex;
+    justify-content: center;
+    padding-top: 270px;
+}
+.btnGameOver button{
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: #D1E9F6;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.btnGameOver button:hover{
+    width: 120px;
+    transition: 1s;
+}
+.container{
+    width: 900px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/303/295/original/mountains-background-game-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: 100% 110%;
+    overflow: hidden;
+    display: none;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+.counterDiv{
+    text-align: end;
+    padding-right: 30px;
+    padding-top: 10px;
+    font-size: 25px;
+}
+.containerBtn{
+    padding-top: 100px;
+    display: none;
+}
+.containerBtn button{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: none;
+    background-color: #1e78a9;
+    color: #121212;
+    font-weight: bold;
+    font-family: "Bungee", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+#cat{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 220px;
+}
+.jumpingCat{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0% {
+        top: 230px;
+      }
+    
+      30% {
+        top: 180px;
+      }
+    
+      50% {
+        top: 160px;
+      }
+    
+      80% {
+        top: 180px;
+      }
+    
+      100% {
+        top: 230px;
+      }
+}
+
+#ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #121212;
+    position: relative;
+    top: 210px;
+    left: 850px;
+    animation: runingBall 3s infinite linear;
+}
+
+@keyframes runingBall{
+    0%{
+        left: 850px;    
+    }
+    100%{
+        left: -20px;
+    }
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+    .containerCountdown{
+        font-size: 2rem;  
+    }
+    .counterDiv{
+        text-align: start;
+        padding-left: 30px;
+    }
+    .containerGameover{
+        width: 400px;
+        height: 580px;
+    }
+
+}

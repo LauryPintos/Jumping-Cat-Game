@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="containerCountdown" id="hideCountdown">
+        <p>Ready to play?</p>
+        <p id="countdown">3</p>
+    </div>
+    <div class="container" id="hideCointaner">
+        <div class="counterDiv">
+            <p id="counter">0</p>
+        </div>
+        <div >
+            <img id="cat" src="../imgs/cat.png" alt="">
+        </div>
+        <div id="ball"></div>
+    </div>
+    <div id="openGameOver">
+        <!-- <div  class="containerGameover animate__animated animate__bounceInDown">
+            <div class="btnGameOver animate__animated animate__bounceInUp">
+                <button>PLAY AGAIN</button>
+            </div>
+        </div>  -->
+    </div>
+    <div class="containerBtn" id="hideButton" >
+        <button id="btnJump">Jump</button>
+        <audio id="soundJump" src="../sound/cartoon_jump.mp3"></audio>
+        <audio id="soundgameover" src="../sound/gameover.mp3"></audio>
+        <audio id="soundOkJump" src="../sound/retro-coin-4-236671(1).mp3"></audio>
+    </div>
+
+
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
