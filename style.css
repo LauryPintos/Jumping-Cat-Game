@@ -148,7 +148,12 @@ body{
         left: -20px;
     }
 }
-
+#made{
+    padding-top: 100px;
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #212121;
+}
 /* RESPONSIVE */
 @media only screen and (max-width: 600px) {
     .containerCountdown{

@@ -4,6 +4,7 @@ const btnJump = document.getElementById('btnJump');
 const soundgameover = document.getElementById('soundgameover');
 const soundOkJump = document.getElementById('soundOkJump');
 const counter = document.getElementById('counter');
+const made = document.getElementById("made");
 
 let counterSuma = 0;
 
@@ -16,7 +17,8 @@ const interval = setInterval(() => {
   if (seconds === 0) {
     document.getElementById('hideCountdown').style = 'display:none';
     document.getElementById('hideCointaner').style = 'display:block';
-      document.getElementById('hideButton').style = 'display:block';    
+    document.getElementById('hideButton').style = 'display:block';    
+    made.innerHTML = `<p>Made by Laury</p>`
   }
 }, 1000);
 
